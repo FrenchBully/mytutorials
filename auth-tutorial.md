@@ -61,8 +61,8 @@ In Terminal - creating the rails model
 ##9. Configure routes.rb
 In Editor
 
-	delete get “users/new” (generated from previous step)
-	add get ‘/signup’ => ‘users#new', as: :signup
+	delete get "users/new" (generated from previous step)
+	add get '/signup' => 'users#new', as: :signup
 	
 	if you check your localhost:3000/signup in browser at this point you’ll see 	output below		
 >	
@@ -127,7 +127,7 @@ In Editor - app > controllers > users_controller.rb
 ##12. Edit routes.rb to add the path to users 
 In Editor - add to the routes.rb in config directory
 
-	root 'users#new' - for now but will change to root ‘sessions#new’ once generated
+	root 'users#new' - for now but will change to root 'sessions#new' once generated
 
   	get 'users/new' => 'users#new'
   	post 'users/' => 'users#create'
